@@ -13,6 +13,10 @@ Also, this project is a task that was requested to be delivered during the train
 - Support for task statuses (Completed, Pending, In Progress).
 - Endpoint to retrieve tasks by status.
 
+##screenshots:
+
+<img src="https://raw.githubusercontent.com/shamam99/taskManager/6e79b259817cd3f895f6dcca150882f5174be3d9/images/getAll.png" alt="Screenshot of getAll" />
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.
