@@ -91,9 +91,30 @@ Send a `GET` request to `/tasks`.
 
 Send a `PUT` request to `/tasks/:id` with the updated fields in the JSON body.
 
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/Update.png)
+
+
 ### Deleting a Task
 
 Send a `DELETE` request to `/tasks/:id`.
+
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/delete.png)
+
+
+### Other operation screenshots:
+
+### for creating:
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/Create.png)
+
+### for get by ID
+
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/getById.png)
+
+### for get by status:
+
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/getByStatus.png)
+
+
 
 ## Testing
 
