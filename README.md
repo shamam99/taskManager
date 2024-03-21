@@ -1,7 +1,8 @@
 ```markdown
 # Task Manager API
 
-This Task Manager API is a RESTful service that allows users to manage their tasks. It provides endpoints for creating, retrieving, updating, and deleting tasks, with the data stored in a JSON file.
+This Task Manager API is a RESTful service that allows users to manage their tasks.
+Also, this project is a task that was requested to be delivered during the training provided by InnoFrontIT to the back-end department.
 
 ## Features
 
