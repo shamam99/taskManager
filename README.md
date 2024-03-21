@@ -15,7 +15,7 @@ Also, this project is a task that was requested to be delivered during the train
 
 ## secreenshots of the work:
 
-![Screenshot of getAll](images/getAll.png)
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/6e79b259817cd3f895f6dcca150882f5174be3d9/images/getAll.png)
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.
