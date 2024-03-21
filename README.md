@@ -15,7 +15,7 @@ Also, this project is a task that was requested to be delivered during the train
 
 ##screenshots:
 
-<img src="https://raw.githubusercontent.com/shamam99/taskManager/6e79b259817cd3f895f6dcca150882f5174be3d9/images/getAll.png" alt="Screenshot of getAll" />
+![Screenshot of getAll](https://raw.githubusercontent.com/shamam99/taskManager/6e79b259817cd3f895f6dcca150882f5174be3d9/images/getAll.png)
 
 ## Getting Started
 
