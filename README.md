@@ -15,7 +15,7 @@ Also, this project is a task that was requested to be delivered during the train
 
 ## secreenshots of the work:
 
-![here the screenshots of the getALL](/https://github.com/shamam99/taskManager/tree/main/images/Create.png)
+![here the screenshots of the getAll](https://raw.githubusercontent.com/shamam99/taskManager/main/images/Create.png)
 
 ## Getting Started
 
