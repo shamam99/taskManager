@@ -13,6 +13,10 @@ Also, this project is a task that was requested to be delivered during the train
 - Support for task statuses (Completed, Pending, In Progress).
 - Endpoint to retrieve tasks by status.
 
+## secreenshots of the work:
+
+![here the screenshots of the getALL](/images/Create.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.
