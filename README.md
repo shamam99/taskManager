@@ -84,6 +84,9 @@ Send a `POST` request to `/tasks` with a JSON body:
 
 Send a `GET` request to `/tasks`.
 
+![Screenshot of getAll](https://raw.githubusercontent.com/shamam99/taskManager/6e79b259817cd3f895f6dcca150882f5174be3d9/images/getAll.png)
+
+
 ### Updating a Task
 
 Send a `PUT` request to `/tasks/:id` with the updated fields in the JSON body.
