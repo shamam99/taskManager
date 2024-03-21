@@ -114,6 +114,10 @@ Send a `DELETE` request to `/tasks/:id`.
 
 ![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/324b75c769dcecd8eee9bff094e8246358e35a19/images/getByStatus.png)
 
+### Try with wrong ID of a task:
+
+![Screenshot of getAll](https://github.com/shamam99/taskManager/blob/73233df7f1dc352a184a8cbabf485b576e00e174/images/error.png)
+
 
 
 ## Testing
