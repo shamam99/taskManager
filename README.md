@@ -6,12 +6,14 @@ Also, this project is a task that was requested to be delivered during the train
 
 ## Features
 
-- CRUD operations for task management.
-- JSON file for data persistence.
-- Unique ID generation for tasks using UUID.
-- Error handling for common edge cases.
-- Support for task statuses (Completed, Pending, In Progress).
-- Endpoint to retrieve tasks by status.
+
+- **CRUD Operations**: Create, Read, Update, and Delete tasks.
+- **Data Persistence**: Utilizes a JSON file to store task data persistently.
+- **UUID Generation**: Assigns unique identifiers to tasks using UUID.
+- **Error Handling**: Implements error handling for common edge cases.
+- **Task Status Support**: Includes support for task statuses such as Completed, Pending, and In Progress.
+- **Status-based Retrieval**: Features an endpoint to retrieve tasks by their status.
+- **Middleware Integration**: Uses middleware for validating task statuses, ensuring consistency and reliability in task state management.
 
 ## Getting Started
 
