@@ -38,20 +38,21 @@ const getTask = (req, res) => {
 //@des Create a tasks
 //@route Create tasks/:id
 //@access Public
-const createTask =  (req, res) => {
-    const { title, description, dueDate } = req.body;
-    let { status } = req.body;
-    status = status || 'Pending';
-    const validStatuses = ['Completed', 'Pending', 'In Progress'];
-    if (!title || !description || !dueDate || !validStatuses.includes(status)) {
-        return res.status(400).json({ message: 'Please fill in all fields: title, description, status, dueDate and ensure status is valid.' });
-    }
-    const tasks = readTasksFile();
-    const id = uuidv4();
-    const newTask = { id, title, description, status, dueDate };
-    tasks[id] = newTask;
-    writeTasksFile(tasks);
-    res.status(201).json(newTask);
+const createTask = (req, res) => {
+  const { title, description, dueDate } = req.body;
+  let { status } = req.body;
+  status = status || 'Pending'; 
+
+  if (!title || !description || !dueDate) {
+      return res.status(400).json({ message: 'Please fill in all required fields: title, description, and dueDate.' });
+  }
+
+  const tasks = readTasksFile();
+  const id = uuidv4();
+  const newTask = { id, title, description, status, dueDate };
+  tasks[id] = newTask;
+  writeTasksFile(tasks);
+  res.status(201).json(newTask);
 };
 
 
@@ -59,25 +60,24 @@ const createTask =  (req, res) => {
 //@route Update tasks/:id
 //@access Public
 const updateTask = (req, res) => {
-    const { title, description, dueDate } = req.body;
-    let { status } = req.body;
-    const validStatuses = ['Completed', 'Pending', 'In Progress'];
-    if (!title || !description || !dueDate || !validStatuses.includes(status)) {
-      res.status(400).json({ message: 'Title, description, status, and due date are required and status must be valid' });
-      return; 
-    }
-    const tasks = readTasksFile();
-    const task = tasks[req.params.id];
-    if (!task) {
-      res.status(404).json({ message: 'Task not found' });
-      return;
-    }
-    const updatedTask = { ...task, title, description, status, dueDate };
-    tasks[req.params.id] = updatedTask;
-    writeTasksFile(tasks);
-    res.json(updatedTask);
-};
+  const { title, description, dueDate } = req.body;
+  let { status } = req.body; 
 
+  if (!title || !description || !dueDate) {
+      return res.status(400).json({ message: 'Title, description, and due date are required' });
+  }
+
+  const tasks = readTasksFile();
+  const task = tasks[req.params.id];
+  if (!task) {
+      return res.status(404).json({ message: 'Task not found' });
+  }
+
+  const updatedTask = { ...task, title, description, status, dueDate };
+  tasks[req.params.id] = updatedTask;
+  writeTasksFile(tasks);
+  res.json(updatedTask);
+};
 
 //@des Delete a tasks
 //@route Delete tasks/:id
@@ -97,25 +97,21 @@ const deleteTask = (req, res) => {
 //@route Get tasks/status/:id
 //@access Public
 const getTasksByStatus = (req, res) => {
-    const tasks = readTasksFile();
-    const statusQuery = req.params.status;
-    const validStatuses = ['Completed', 'Pending', 'In Progress'];
-    if (!validStatuses.includes(statusQuery)) {
-      return res.status(400).json({ message: 'Invalid status. Valid statuses are Completed, Pending, In Progress.' });
-    }
-    const filteredTasks = Object.values(tasks).filter(task => task.status === statusQuery);
-    if (!filteredTasks.length) {
+  const tasks = readTasksFile();
+  const statusQuery = req.params.status;
+
+  const filteredTasks = Object.values(tasks).filter(task => task.status === statusQuery);
+  if (!filteredTasks.length) {
       return res.status(404).json({ message: 'No tasks found with the specified status' });
-    }
-    res.status(200).json(filteredTasks);
+  }
+  res.status(200).json(filteredTasks);
 };
 
-
 module.exports = {
-    getAllTasks,
-    getTask,
-    createTask,
-    updateTask,
-    deleteTask,
-    getTasksByStatus,
+  getAllTasks,
+  getTask,
+  createTask,
+  updateTask,
+  deleteTask,
+  getTasksByStatus,
 };

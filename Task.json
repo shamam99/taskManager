@@ -26,5 +26,12 @@
     "description": "Create slides for the project presentation.",
     "status": "complete",
     "dueDate": "2024-03-29"
+  },
+  "be5a5add-1074-42c3-8791-301f3018560e": {
+    "id": "be5a5add-1074-42c3-8791-301f3018560e",
+    "title": "Prepare presentation slides",
+    "description": "Create slides for the project presentation.",
+    "status": "In Progress",
+    "dueDate": "2024-03-30"
   }
 }
